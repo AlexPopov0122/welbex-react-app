@@ -1,0 +1,153 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 483px;
+    margin: 100px 0 125px 0;
+}
+
+.advertising {
+    width: 362px;
+    font-size: 48px;
+}
+
+.advertising .gradientTitle {
+    font-weight: 900;
+}
+
+.advertising .subtitle {
+    width: 275px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.advertisement {
+    font-size: 18px;
+    text-align: right;
+}
+
+.advertisement .title {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.advertisement >.title {
+    line-height: 22px;
+    position: relative;
+    margin-right: 0;
+    width: 310px;
+    margin-bottom: 40px;
+}
+
+.advertisement .gradientTitle {
+    font-weight: 700;
+}
+
+.absBody {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.absBlock .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    width: 140px;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.absBody {
+    margin-bottom: 60px;
+}
+
+.absBodyMobile {
+    font-family: 'Montserrat', sans-serif;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 13px;
+    text-transform: uppercase;
+    grid-row-gap: 14px;
+    display: none;
+}
+
+.absBodyMobile >div :first-child {
+    margin-right: 5px;
+}
+
+.advertisement button {
+    background-color: #4077F3;
+    padding: 20px 25px;
+}
+
+.advertisement button:hover {
+    background-color: #2164f6;
+}
+
+@media (max-width: 1230px) {
+    main {
+        gap: 250px;
+    }
+}
+
+@media (max-width: 1050px) {
+    main {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 760px) {
+    main {
+        flex-wrap: wrap;
+        padding: 0 150px;
+        justify-content: start;
+    }
+
+    .advertisement {
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+
+    main {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        gap: 45px;
+    }
+
+    .advertising {
+        font-size: 36px;
+    }
+
+    .advertising .subtitle {
+        font-size: 18px;
+    }
+
+    .advertisement >.title {
+        margin-bottom: 20px;
+    }
+
+    .absBody {
+        display: none;
+    }
+
+    button {
+        display: none;
+    }
+
+    .absBodyMobile {
+        display: grid;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 320px;
+    }
+}

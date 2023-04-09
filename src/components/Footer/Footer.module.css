@@ -1,0 +1,159 @@
+footer {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 88px;
+}
+
+footer .title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #656566;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+footer a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.aboutCompany {
+    margin-right: 100px;
+}
+
+.menu {
+    margin-right: 163px;
+}
+
+.menuSubtitles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 52px;
+}
+
+.contacts {
+    text-align: right;
+}
+
+.contactsSubtitles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.socialNetworks {
+    display: flex;
+    height: 20px;
+    justify-content: end;
+    gap: 13px;
+}
+
+.signature {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: right;
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+}
+
+.rule {
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+@media (max-width: 1230px) {
+
+    footer {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .contacts {
+        flex-basis: 75%;
+        text-align: center;
+    }
+
+     .menu {
+        margin-right: 0;
+         text-align: right;
+    }
+
+    .aboutCompany {
+        margin-right: 150px;
+    }
+
+    .socialNetworks {
+        justify-content: center;
+    }
+
+    .signature {
+        right: 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    footer {
+        padding: 0 20px;
+    }
+
+    .aboutCompany {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .contacts, .menu, .aboutCompany {
+        text-align: left;
+    }
+
+    .signature {
+        font-size: 10px;
+    }
+
+    footer {
+        position: static;
+        flex-direction: column;
+        width: 100vw;
+        background-color: #1E1E1E;
+        align-items: start;
+        padding: 50px 30px 60px 30px;
+    }
+
+    .signature {
+        position: static;
+        text-align: left;
+    }
+
+    .socialNetworks {
+        justify-content: left;
+    }
+
+    .contacts {
+        flex-basis: max-content;
+    }
+
+    .menu {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        font-size: 14px;
+        padding-top: 40px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+        gap: 30px;
+    }
+}
